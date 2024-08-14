@@ -23,36 +23,21 @@ const getAreaPerimeter = figureType => {
 	switch (figureType) {
 		case 1:
 			const radius = getNumericValue('Введіть радіус');
-<<<<<<<<< Temporary merge branch 1
 			const circleArea = getCircleArea(radius);
 			const circlePerimeter = getCirclePerimeter(radius);
-=========
-			const circleArea = getCircleArea(radius)
-			const circlePerimeter = getCirclePerimeter(radius)
->>>>>>>>> Temporary merge branch 2
 			return `Площа кола: ${circleArea}, периметр кола: ${circlePerimeter}`;
 		case 2:
 			const length = getNumericValue('Введіть довжину прямокутника');
 			const width = getNumericValue('Введіть ширину прямокутника');
-<<<<<<<<< Temporary merge branch 1
 			const rectangleArea = getRectangleArea(length, width);
 			const rectanglePerimeter = getRectanglePerimeter(length, width);
-=========
-			const rectangleArea = getRectangleArea(length, width)
-			const rectanglePerimeter = getRectanglePerimeter(length, width)
->>>>>>>>> Temporary merge branch 2
 			return `Площа прямокутника: ${rectangleArea}, периметр прямокутника: ${rectanglePerimeter}`;
 		case 3:
 			const a = getNumericValue('Введіть першу сторону трикутника');
 			const b = getNumericValue('Введіть другу сторону трикутника');
 			const c = getNumericValue('Введіть третю сторону трикутника');
-<<<<<<<<< Temporary merge branch 1
 			const triangleArea = getTriangleArea(a, b, c);
 			const trianglePerimeter = getTrianglePerimeter(a, b, c);
-=========
-			const triangleArea = getTriangleArea(a, b, c)
-			const trianglePerimeter = getTrianglePerimeter(a, b, c)
->>>>>>>>> Temporary merge branch 2
 			return `Площа трикутника: ${triangleArea}, периметр трикутника: ${trianglePerimeter}`;
 	}
 }
